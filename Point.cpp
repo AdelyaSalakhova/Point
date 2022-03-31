@@ -16,7 +16,7 @@ H::H(double h) {
 Point3D::Point3D(int x, int y, int z) : Point_2D(x, y), Z(z) {}
 
 void Point3D::Coordinates3D() {
-	cout << "Êîîðäèíàòû îáúåêòà : (" << this->x << ", " << this->y << ", " << this->z << ")" << endl;
+	cout << "ÐšÐ¾Ð¾Ñ€Ð´Ð¸Ð½Ð°Ñ‚Ñ‹ Ð¾Ð±ÑŠÐµÐºÑ‚Ð° : (" << this->x << ", " << this->y << ", " << this->z << ")" << endl;
 }
 
 Point_3Dh::Point_3Dh(int x, int y, int z, double h) : Point_2D(x, y), Z(z), H(h) {
@@ -28,9 +28,9 @@ Point_3Dh::Point_3Dh(int x, int y, int z, double h) : Point_2D(x, y), Z(z), H(h)
 
 void Point_3Dh::RealCoordinates() {
 	if (flag == 0) {
-	    cout << "Ðåàëüíûå êîîðäèíàòû îáúåêòà : " << "(" << this->x / this->h << ", " << this->y / this->h << ", " << this->z / this->h << ")" << endl;
+	    cout << "Ð ÐµÐ°Ð»ÑŒÐ½Ñ‹Ðµ ÐºÐ¾Ð¾Ñ€Ð´Ð¸Ð½Ð°Ñ‚Ñ‹ Ð¾Ð±ÑŠÐµÐºÑ‚Ð° : " << "(" << this->x / this->h << ", " << this->y / this->h << ", " << this->z / this->h << ")" << endl;
     }
 	else {
-		cout << "Îøèáêà, 4 êîîðäèíàòà îáúåêòà ðàâíà 0." << endl;
+		cout << "ÐžÑˆÐ¸Ð±ÐºÐ°, 4 ÐºÐ¾Ð¾Ñ€Ð´Ð¸Ð½Ð°Ñ‚Ð° Ð¾Ð±ÑŠÐµÐºÑ‚Ð° Ñ€Ð°Ð²Ð½Ð° 0." << endl;
 	}
 }
